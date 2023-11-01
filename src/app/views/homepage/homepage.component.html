@@ -1,55 +1,48 @@
-<div>
-    <h3>Biceps</h3>
-    <button (click)="selectHumanBodyGroup('biceps')">+</button>
-</div>
-<div>
-    <h3>Bras</h3>
-    <button (click)="selectHumanBodyGroup('arm')">+</button>
-</div>
-<div>
-    <h3>Avant-Bras</h3>
-    <button (click)="selectHumanBodyGroup('forearm')">+</button>
-</div>
-<div>
-    <h3>Epaules</h3>
-    <button (click)="selectHumanBodyGroup('shoulder')">+</button>
-</div>
-<div>
-    <h3>Avant-Bras</h3>
+<div class="flex">
+    <div class="flex-item">
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('neck')">+</button>
+            <h3 class="option-title">Cou</h3>
+        </div>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('trapeze')">+</button>
+            <h3 class="option-title">Trapèzes</h3>
+        </div>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('shoulder')">+</button>
+            <h3 class="option-title">Epaules</h3>
+        </div>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('arm')">+</button>
+            <h3 class="option-title">Bras</h3>
+        </div>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('forearm')">+</button>
+            <h3 class="option-title">Avant-Bras</h3>
+        </div>
 
-</div>
-<div>
-    <h3>Epaules</h3>
-    <button (click)="selectHumanBodyGroup('shoulder')">+</button>
-</div>
-<div>
-    <h3>Trapèzes</h3>
-    <button (click)="selectHumanBodyGroup('trapeze')">+</button>
-</div>
-<div>
-    <h3>Pectoraux</h3>
-    <button (click)="selectHumanBodyGroup('pectoral')">+</button>
-</div>
-<div>
-    <h3>Cou</h3>
-    <button (click)="selectHumanBodyGroup('neck')">+</button>
-</div>
-<div>
-    <h3>Obliques</h3>
-    <button (click)="selectHumanBodyGroup('oblique')">+</button>
-</div>
-<div>
-    <h3>Jambes</h3>
-    <button (click)="selectHumanBodyGroup('leg')">+</button>
-</div>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('pectoral')">+</button>
+            <h3 class="option-title">Pectoraux</h3>
+        </div>
 
-<div>
-    <h3>Abdos</h3>
-    <button (click)="selectHumanBodyGroup('core')">+</button>
-</div>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('oblique')">+</button>
+            <h3 class="option-title">Obliques</h3>
+        </div>
 
-<app-human-body></app-human-body>
 
-<div>
-    <h4></h4>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('core')">+</button>
+            <h3 class="option-title">Abdos</h3>
+        </div>
+        <div class="flex option">
+            <button class="option-button" (click)="selectHumanBodyGroup('leg')">+</button>
+            <h3 class="option-title">Jambes</h3>
+        </div>
+    </div>
+    <app-human-body class="flex-item"></app-human-body>
+    <div class="flex-item">
+        <h4>a</h4>
+    </div>
 </div>

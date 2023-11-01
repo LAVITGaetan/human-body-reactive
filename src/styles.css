@@ -2,4 +2,52 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
+    color: #fff;
+}
+
+body {
+    background-color: var(--clr-main);
+}
+
+:root {
+    --clr-cta : #0094b9;
+    --clr-main : #222;
+    --clr-body-part : #fff;
+    --clr-body-figure : #222;
+    --clr-grey : #F1F6F9;
+}
+
+body {
+    padding: 20px 10%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-item {
+    width: fit-content
+}
+
+
+
+.option {
+    width: fit-content;
+}
+
+.option-button {
+    width: 24px;
+    height: 24px;
+    background: var(--clr-body-figure);
+    border: 2px solid #555;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.option-title {
+    font-size: 18px;
+    padding: 6px;
 }
