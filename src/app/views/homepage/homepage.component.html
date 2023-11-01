@@ -1,48 +1,9 @@
+<div class="flex option">
+    <button class="option-button" (click)="toggleHumanFigure()">+</button>
+    <h3 class="option-title"><span *ngIf="!humanFigureShowed">Afficher</span><span *ngIf="humanFigureShowed">Masquer</span> Silhouette</h3>
+</div>
 <div class="flex">
-    <div class="flex-item">
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('neck')">+</button>
-            <h3 class="option-title">Cou</h3>
-        </div>
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('trapeze')">+</button>
-            <h3 class="option-title">Trapèzes</h3>
-        </div>
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('shoulder')">+</button>
-            <h3 class="option-title">Epaules</h3>
-        </div>
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('arm')">+</button>
-            <h3 class="option-title">Bras</h3>
-        </div>
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('forearm')">+</button>
-            <h3 class="option-title">Avant-Bras</h3>
-        </div>
-
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('pectoral')">+</button>
-            <h3 class="option-title">Pectoraux</h3>
-        </div>
-
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('oblique')">+</button>
-            <h3 class="option-title">Obliques</h3>
-        </div>
-
-
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('core')">+</button>
-            <h3 class="option-title">Abdos</h3>
-        </div>
-        <div class="flex option">
-            <button class="option-button" (click)="selectHumanBodyGroup('leg')">+</button>
-            <h3 class="option-title">Jambes</h3>
-        </div>
-    </div>
-    <app-human-body class="flex-item"></app-human-body>
-    <div class="flex-item">
-        <h4>a</h4>
-    </div>
+    <app-body-front class="flex-item flex"></app-body-front>
+    <app-body-back class="flex-item flex"></app-body-back>
+    <app-body-info class="flex-item"></app-body-info>
 </div>

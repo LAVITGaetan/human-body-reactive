@@ -1,0 +1,22 @@
+.body-part:hover{
+    fill: var(--clr-cta)!important;
+    cursor: pointer;
+}
+
+.body-figure {
+    fill: var(--clr-body-figure)!important;
+}
+
+.body-figure-showed {
+    fill: #F1F6F9!important;
+}
+
+.body-part {
+    stroke: var(--clr-body-figure)!important;
+    fill:  var(--clr-body-part)!important;
+}
+
+
+.body-part-selected {
+    fill: var(--clr-cta)!important;
+}

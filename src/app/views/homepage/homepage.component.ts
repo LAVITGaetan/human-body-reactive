@@ -6,13 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {
-
-  selectHumanBodyGroup(bodyGroup: string) {
-    let selectedBodyGroup = document.getElementsByClassName(`body-group-${bodyGroup}`)
-    if(selectedBodyGroup)
-    for (let i = 0; i < selectedBodyGroup.length; i++) {
-      const element = selectedBodyGroup[i];
-      element.classList.add('body-part-selected')
+  humanFigureShowed: boolean = false
+  toggleHumanFigure() {
+    let bodyFigure = document.getElementsByClassName(`body-figure`)
+    if (!this.humanFigureShowed) {
+      for (let i = 0; i < bodyFigure.length; i++) {
+        const element = bodyFigure[i];
+        element.classList.add('body-figure-showed')
+        this.humanFigureShowed = true
+      }
+    } else {
+      let bodyFigure = document.getElementsByClassName(`body-figure`)
+      for (let i = 0; i < bodyFigure.length; i++) {
+        const element = bodyFigure[i];
+        element.classList.remove('body-figure-showed')
+        this.humanFigureShowed = false
+      }
     }
   }
+
 }

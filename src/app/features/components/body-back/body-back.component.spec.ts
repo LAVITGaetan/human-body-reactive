@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HumanBodyComponent } from './human-body.component';
+import { BodyBackComponent } from './body-back.component';
 
-describe('HumanBodyComponent', () => {
-  let component: HumanBodyComponent;
-  let fixture: ComponentFixture<HumanBodyComponent>;
+describe('BodyBackComponent', () => {
+  let component: BodyBackComponent;
+  let fixture: ComponentFixture<BodyBackComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HumanBodyComponent]
+      declarations: [BodyBackComponent]
     });
-    fixture = TestBed.createComponent(HumanBodyComponent);
+    fixture = TestBed.createComponent(BodyBackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

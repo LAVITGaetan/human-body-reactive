@@ -7,6 +7,10 @@
     fill: var(--clr-body-figure)!important;
 }
 
+.body-figure-showed {
+    fill: #F1F6F9!important;
+}
+
 .body-part {
     stroke: var(--clr-body-figure)!important;
     fill:  var(--clr-body-part)!important;
