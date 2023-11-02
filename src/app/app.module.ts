@@ -7,6 +7,7 @@ import { HomepageComponent } from './views/homepage/homepage.component';
 import { BodyFrontComponent } from './features/components/body-front/body-front.component';
 import { BodyBackComponent } from './features/components/body-back/body-back.component';
 import { BodyInfoComponent } from './features/components/body-info/body-info.component';
+import { NavbarComponent } from './core/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { BodyInfoComponent } from './features/components/body-info/body-info.com
     BodyFrontComponent,
     BodyBackComponent,
     BodyInfoComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
