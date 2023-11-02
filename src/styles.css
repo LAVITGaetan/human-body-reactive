@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Montserrat;
-    color: #fff;
+    color: var(--clr-text);
 }
 
 body {
@@ -11,13 +11,25 @@ body {
 }
 
 :root {
-    /* --clr-cta : #0094b9; */
-    --clr-cta : #06fed2;
+    --clr-cta : #0094b9;
+    /* --clr-cta : #06fed2; */
     --clr-main : #17181a;
     --clr-secondary : #2e2f31;
     --clr-body-part : #fff;
-    --clr-body-figure : #17181a;
+    --clr-text : #fff;
+    --clr-body-figure : #2e2f31;
     --clr-grey : #F1F6F9;
+}
+
+body.light-theme  {
+    --clr-cta : #017d9c;
+    /* --clr-cta : #06fed2; */
+    --clr-main : #F1F6F9;
+    --clr-secondary : #fff;
+    --clr-body-part : #17181a;
+    --clr-text : #17181a;
+    --clr-body-figure : #FFF;
+    --clr-grey : #eef4f8;
 }
 
 body {

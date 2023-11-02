@@ -4,11 +4,13 @@
 }
 
 .body-figure {
-    fill: var(--clr-body-figure)!important;
+    fill: var(--clr-main)!important;
+    stroke: var(--clr-main)!important;
 }
 
 .body-figure-showed {
-    fill: #F1F6F9!important;
+    fill: var(--clr-body-figure)!important;
+    stroke: var(--clr-body-figure)!important;
 }
 
 .body-part {

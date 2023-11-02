@@ -1,5 +1,10 @@
+<label class="toggle-btn" (click)="toggleTheme()">
+    <input type="checkbox" />
+    <span class="circle"></span>
+  </label>
+
 <div class="flex option">
-    <button class="option-button" (click)="toggleHumanFigure()">+</button>
+    <button class="option-button" (click)="toggleHumanFigure()"></button>
     <h3 class="option-title"><span *ngIf="!humanFigureShowed">Afficher</span><span *ngIf="humanFigureShowed">Masquer</span> Silhouette</h3>
 </div>
 <div class="flex">

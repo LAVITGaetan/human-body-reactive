@@ -25,4 +25,8 @@ export class HomepageComponent {
     }
   }
 
+  toggleTheme() {
+    document.body.classList.toggle('light-theme')
+  }
+
 }

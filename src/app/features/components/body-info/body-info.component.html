@@ -1,13 +1,21 @@
 <div class="body-info">
     <div class="body-info-topbar" *ngIf="bodyPartSelected != 'none'">
-    <span class="body-info-title">Partie sélectionnée : </span> <span class="body-part-selected">{{bodyPartSelected}}</span>
-</div>
+        <span class="body-info-title">Groupe musculaire : </span> <span
+            class="body-part-selected">{{bodyPartSelected}}</span>
+    </div>
+    <div class="body-info-topbar" *ngIf="bodyPartSelected == 'none'">
+        <span class="body-info-title">Selectionner une partie du corps</span>
+    </div>
 
-<div class="body-info-grid">
-    <div class="body-info-card"><span class="body-info-card-title">Blessures</span></div>
-    <div class="body-info-card"><span class="body-info-card-title">Pathologies</span></div>
-    <div class="body-info-card"><span class="body-info-card-title">Réeducation</span></div>
-    <div class="body-info-card"><span class="body-info-card-title">Renforcement</span></div>
+    <div class="body-info-grid">
+        <div class="body-info-card"><img class="body-info-card-icon" width="24px" height="24px"
+                src="./assets/frontend/icon-injury.png"><span class="body-info-card-title">Blessures</span></div>
+        <div class="body-info-card"><img class="body-info-card-icon" width="24px" height="24px"
+                src="./assets/frontend/icon-ill.png"><span class="body-info-card-title">Pathologies</span></div>
+        <div class="body-info-card"><img class="body-info-card-icon" width="24px" height="24px"
+                src="./assets/frontend/icon-rehabilitation.png"><span class="body-info-card-title">Réeducation</span>
+        </div>
+        <div class="body-info-card"><img class="body-info-card-icon" width="24px" height="24px"
+                src="./assets/frontend/icon-workout.png"><span class="body-info-card-title">Renforcement</span></div>
+    </div>
 </div>
-</div>
-
