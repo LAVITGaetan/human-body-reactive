@@ -1,46 +1,5 @@
 
-<div class="flex-item">
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('back')">+</button>
-        <h3 class="option-title">Dos</h3>
-    </div>
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('trapeze')">+</button>
-        <h3 class="option-title">Trapèzes</h3>
-    </div>
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('shoulder')">+</button>
-        <h3 class="option-title">Epaules</h3>
-    </div>
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('arm')">+</button>
-        <h3 class="option-title">Bras</h3>
-    </div>
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('forearm')">+</button>
-        <h3 class="option-title">Avant-Bras</h3>
-    </div>
 
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('pectoral')">+</button>
-        <h3 class="option-title">Pectoraux</h3>
-    </div>
-
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('lowback')">+</button>
-        <h3 class="option-title">Bas du dos</h3>
-    </div>
-
-
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('glute')">+</button>
-        <h3 class="option-title">Fessiers</h3>
-    </div>
-    <div class="flex option">
-        <button class="option-button" (click)="selectHumanBodyGroup('leg')">+</button>
-        <h3 class="option-title">Jambes</h3>
-    </div>
-</div>
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300"
     height="600" viewBox="0 0 500 1000" xml:space="preserve">
@@ -248,3 +207,46 @@
             stroke-linecap="round" />
     </g>
 </svg>
+
+<div class="flex-item body-options-container">
+    <div class="flex option" (click)="selectHumanBodyGroup('back')">
+        <button class="option-button" id="option-button-back"></button>
+        <h3 class="option-title">Dos</h3>
+    </div>
+    <div class="flex option" (click)="selectHumanBodyGroup('trapeze')">
+        <button class="option-button" id="option-button-trapeze"></button>
+        <h3 class="option-title">Trapèzes</h3>
+    </div>
+    <div class="flex option" (click)="selectHumanBodyGroup('shoulder')">
+        <button class="option-button" id="option-button-shoulder"></button>
+        <h3 class="option-title">Epaules</h3>
+    </div>
+    <div class="flex option" (click)="selectHumanBodyGroup('arm')">
+        <button class="option-button" id="option-button-arm"></button>
+        <h3 class="option-title">Bras</h3>
+    </div>
+    <div class="flex option" (click)="selectHumanBodyGroup('forearm')">
+        <button class="option-button" id="option-button-forearm"></button>
+        <h3 class="option-title">Avant-Bras</h3>
+    </div>
+
+    <div class="flex option" (click)="selectHumanBodyGroup('pectoral')">
+        <button class="option-button" id="option-button-pectoral"></button>
+        <h3 class="option-title">Pectoraux</h3>
+    </div>
+
+    <div class="flex option" (click)="selectHumanBodyGroup('lowback')">
+        <button class="option-button" id="option-button-lowback"></button>
+        <h3 class="option-title">Bas du dos</h3>
+    </div>
+
+
+    <div class="flex option" (click)="selectHumanBodyGroup('glute')">
+        <button class="option-button" id="option-button-glute"></button>
+        <h3 class="option-title">Fessiers</h3>
+    </div>
+    <div class="flex option" (click)="selectHumanBodyGroup('leg')">
+        <button class="option-button" id="option-button-leg "></button>
+        <h3 class="option-title">Jambes</h3>
+    </div>
+</div>

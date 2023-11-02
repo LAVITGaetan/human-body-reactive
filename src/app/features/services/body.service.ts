@@ -11,7 +11,8 @@ export class BodyService {
   bodyPartSelected$ = this.bodyPartSelected.asObservable()
 
   selectHumanBodyGroup(bodyGroup: string) {
-    let previousBodyGroup = document.getElementsByClassName(`body-group-${this.bodyPartSelected.value}`)    
+    this.selectOptionItem(bodyGroup)
+    let previousBodyGroup = document.getElementsByClassName(`body-group-${this.bodyPartSelected.value}`)
     for (let i = 0; i < previousBodyGroup.length; i++) {
       const element = previousBodyGroup[i];
       element.classList.remove('body-part-selected')
@@ -24,5 +25,14 @@ export class BodyService {
         const element = selectedBodyGroup[i];
         element.classList.add('body-part-selected')
       }
+  }
+
+  selectOptionItem(bodyGroup: string) {
+    let previousOptionItem = document.getElementById(`option-button-${this.bodyPartSelected.value}`)
+    if (previousOptionItem) previousOptionItem.classList.remove('option-button-selected')
+
+    let optionItem = document.getElementById(`option-button-${bodyGroup}`)
+    if (optionItem) optionItem.classList.add('option-button-selected')
+
   }
 }

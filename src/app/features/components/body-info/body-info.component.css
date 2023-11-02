@@ -1,3 +1,7 @@
+.body-info {
+    padding: 20px;
+}
+
 .body-info-title {
     color: #fff;
     font-size: 20px;
@@ -34,7 +38,7 @@
 .body-info-card {
     width: 100%;
     height: 100%;
-    background-color: #262626;
+    background-color: var(--clr-secondary);
     padding: 20px;
     border-radius: 2px;
 }

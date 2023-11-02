@@ -11,15 +11,17 @@ body {
 }
 
 :root {
-    --clr-cta : #0094b9;
-    --clr-main : #222;
+    /* --clr-cta : #0094b9; */
+    --clr-cta : #06fed2;
+    --clr-main : #17181a;
+    --clr-secondary : #2e2f31;
     --clr-body-part : #fff;
-    --clr-body-figure : #222;
+    --clr-body-figure : #17181a;
     --clr-grey : #F1F6F9;
 }
 
 body {
-    padding: 20px 10%;
+    padding: 20px 7%;
 }
 
 .flex {
@@ -32,23 +34,33 @@ body {
     width: fit-content
 }
 
-
-
 .option {
-    width: fit-content;
-}
-
-.option-button {
-    width: 24px;
-    height: 24px;
-    background: var(--clr-body-figure);
-    border: 2px solid #555;
-    border-radius: 2px;
+    padding: 10px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
+.option-button {
+width: 12px;
+height: 12px;
+border-radius: 12px;
+background-color: var(--clr-grey);
+outline: none;
+border: none;
+}
+
+.option-button-selected {
+    background-color: var(--clr-cta);
+}
+
 .option-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 6px;
+    padding-left: 12px;
+}
+
+.body-options-container {
+    background-color: var(--clr-secondary);
+    padding: 15px;
+    border-radius: 4px;
 }
